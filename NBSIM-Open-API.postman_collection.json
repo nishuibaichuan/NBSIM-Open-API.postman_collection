@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "5c80ca8a-c443-4280-a8f5-5598765742bb",
+		"name": "NBSIM-Open-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2476153"
+	},
+	"item": [
+		{
+			"name": "Mapping of Integrated Card IDs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sType\": \"s256\",\r\n    \"sign\": \"ee0b4da4565d77ea953abc5c492575b07611123dc169051ee1e3f146646e22e32\",\r\n    \"param\": \"eyJfYml6VGltZSI6MTc2NzkyNDM1OTkyNSwiX2Zsb3dObyI6IjFiMThiN2I5OTQ3NzQ2ZmFiNjE5MWQwZmIwZmUzMWRlIiwiYXBwSWQiOiIxNzY3ODQ0NzM3MDAwMDAxIiwic2ltTm9MaXN0IjoiOTk4Njk5MjQwMzEwMDAwMjExOCw5OTg2OTkyNDAzMTAwMDA1MjE0In0=\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.nbsim.com/plat/cmp/openApi/integratedCard/querySimInfoBatch",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nbsim",
+						"com"
+					],
+					"path": [
+						"plat",
+						"cmp",
+						"openApi",
+						"integratedCard",
+						"querySimInfoBatch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieval of Cumulative Usage for Integrated Cards",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sType\": \"s256\",    \r\n    \"sign\": \"fc0d58bc314db46552c17330e3cb484e1aa50ed85944bd6772ce867261452356\",\r\n    \"param\": \"eyJfYml6VGltZSI6MTc2NzkyNDc2Nzk0OSwiX2Zsb3dObyI6IjliNjc2NDY4NDZmYTQ5MmRhNmI2ZjQzMTY1MmIyNzlmIiwiYXBwSWQiOiIxNzY3ODQ0NzM3MDAwMDAxIiwiY3NpZExpc3QiOiI5OTg2OTkyNDAzMTAwMDAyMTE4LDk5ODY5OTI0MDMxMDAwMDUyMTQiLCJlbmREYXRlIjoyMDI2MDExMiwic3RhcnREYXRlIjoyMDI2MDEwMX0=\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.nbsim.com/plat/cmp/openApi/integratedCard/queryUsageBatch",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nbsim",
+						"com"
+					],
+					"path": [
+						"plat",
+						"cmp",
+						"openApi",
+						"integratedCard",
+						"queryUsageBatch"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
